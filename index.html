@@ -108,6 +108,31 @@
         .color-theme-3 {
             background-color: #F39C12;
         }
+
+        /* Mobile styles */
+@media screen and (max-width: 600px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+  aside {
+    display: none;
+  }
+}
+
+/* Tablet styles */
+@media screen and (min-width: 601px) and (max-width: 960px) {
+  aside {
+    display: block;
+  }
+}
+
+/* Desktop styles */
+@media screen and (min-width: 961px) {
+  aside {
+    width: 300px;
+  }
+}
+        
     </style>
 </head>
 
